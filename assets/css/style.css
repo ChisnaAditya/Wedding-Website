@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
+
+:root{
+    --bg-primary: #ffffff;
+    --bg-secondary: #7895b3;
+    --txt-primary: #000;
+    --txt-secondary: #7895B2;
+    --transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--txt-primary);
+}
+
+header{
+    display: inline;
+}
+
+header,
+article{
+    text-align: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.jumbotron h1{
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 4rem;
+    padding: 20px 20px 0 20px;
+}
+.jumbotron p{
+    padding: 10px;
+}
+
+nav{
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255,255,255,0.8);
+    transition: var(--transition);
+}
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--bg-secondary);
+}
+nav a:hover{
+    transition: var(--transition);
+    transform: scale(2);
+    color: var(--txt-primary);
+}
+nav ul li{
+    display: inline;
+}
+.nav-shadow{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+main{
+    padding: 20px 50px 50px 50px;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.hero img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+article{
+    padding: 20px 100px;
+}
+article h1{
+    padding: 20px;
+}
+article p{
+    line-height: 2;
+}
+article h3{
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Ruthie', cursive;
+    color: var(--txt-secondary);
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+.galeri-1,
+.galeri-2,
+.galeri-3{
+    cursor: pointer;
+    transition: var(--transition);
+}
+.galeri-1:hover,
+.galeri-2:hover,
+.galeri-3:hover{
+    transform: scale(1.1);
+}
+.this-is,
+.my-gallery,
+.collections{
+    font-size: 3rem;
+    font-family: 'Mr Dafoe', cursive;
+}
+.card img{
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card h3{
+    padding: 10px;
+}
+.card p{
+    overflow: scroll;
+}
+
+.pricelist-container{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 20px;
+}
+.pricelist-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 60%;
+}
+.menu-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu{
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: var(--shadow);
+}
+.menu h3{
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--bg-secondary);
+}
+.our-pricelist h1{
+    font-size: 3rem;
+    font-family: 'Mr Dafoe', cursive;
+}
+.pricelist-photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 40%;
+    overflow: hidden;
+}
+.pricelist-photo img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testimoni-container{
+    display: flex;
+    justify-content: center;
+}
+.testi-photo{
+    flex-basis: 40%;
+}
+.testi-photo img{
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: top;
+}
+.testi-caption{
+    display: flex;
+    flex-basis: 40%;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.testi-caption .owner{
+    margin-top: 20px;
+}
+.arrow-container{
+    display: flex;
+    margin-top: 20px;
+}
+.arrow-container i{
+    font-size: 1.5rem;
+}
+.arrow-container span{
+    margin-left: 20px;
+}
+.testi-prev,
+.testi-next{
+    cursor: pointer;
+    transition: var(--transition);
+}
+.testi-prev:hover,
+.testi-next:hover{
+    transform: scale(1.2);
+}
+.full-text{
+    font-size: 0.8rem;
+}
+
+.biodata{
+    display: flex;
+    margin-top: 50px;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 60%;
+    text-align: center;
+    max-height: 70vh;
+}
+.left-side h2{
+    font-size: 3rem;
+    font-family: 'Mr Dafoe', cursive;
+}
+.left-side p{
+    padding: 20px;
+    line-height: 2;
+}
+.your-name{
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+.sosmed-container p{
+    font-size: 0.7rem;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.sosmed-icons{
+    font-size: 2rem;
+}
+.sosmed-icons i{
+    padding: 10px;
+    color: var(--txt-primary);
+    background-color: var(--txt-secondary);
+    transition: var(--transition);
+}
+.sosmed-icons i:hover{
+    transform: scale(1.2);
+}
+
+.right-side{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.photo-display{
+    width: 100%;
+}
+.photo-display img{
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.photo-collection{
+    display: flex;
+    justify-content: space-between;
+}
+.photo-collection button{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+.photo-collection img{
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+.photo-collection img:hover{
+    transform: scale(1.2);
+}
+.sosmed-container-mobile{
+    display: none;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 513px){
+    main{
+        padding: 20px;
+    }
+    article{
+        padding: 0;
+    }
+    article p{
+        font-size: 0.7rem;
+        line-height: 1;
+    }
+    .card-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .spacer{
+        display: none;
+    }
+    .this-is,
+    .my-gallery,
+    .collections{
+        display: none;
+    }
+    .pricelist-menu{
+        justify-content: space-between;
+    }
+    .menu-container{
+        align-items: center;
+        justify-content: center;
+    }
+    .menu{
+        width: 150px;
+        height: 75px;
+        padding: 2px;
+        margin: 20px;
+    }
+    .menu h3{
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
+    .menu p{
+        font-size: 0.8rem;
+    }
+    .pricelist-photo{
+        justify-content: space-between;
+    }
+    .our-pricelist h1{
+        font-size: 2.5rem;
+    }
+    .testimoni-container{
+        flex-direction: column;
+    }
+    .testi-photo img{
+        width: 100%;
+        max-height: 60vh;
+        object-fit: cover;
+        object-position: top;
+    }
+    .testi-caption{
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+    .cuplikan{
+        font-size: 0.95rem;
+    }
+    .biodata{
+        flex-direction: column;
+    }
+    .left-side h1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .left-side p{
+        padding: 20px;
+        line-height: 1;
+    }
+    .your-name{
+        text-align: center;
+    }
+    .photo-display img{
+        max-height: 40vh;
+    }
+    .sosmed-container{
+        margin-bottom: 20px;
+    }
+    .sosmed-container p{
+        margin-bottom: 0;
+    }
+    .sosmed-container{
+        display: none;
+    }
+    .sosmed-container-mobile{
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .menu-container{
+        align-items: center;
+        justify-content: center;
+    }
+    .menu{
+        width: 150px;
+        height: 75px;
+        padding: 2px;
+        margin: 20px;
+    }
+    .menu h3{
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
+    .menu p{
+        font-size: 0.8rem;
+    }
+    .pricelist-photo{
+        justify-content: space-between;
+    }
+    .our-pricelist h1{
+        font-size: 2.5rem;
+    }
+}
